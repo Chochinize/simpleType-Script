@@ -1,4 +1,5 @@
 .App {
+  
   text-align: center;
 }
 
@@ -35,4 +36,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+.AddToList{
+  margin: 5% 40%;
+  display: flex;
+  flex-direction: column;
+  width:300px;
 }
