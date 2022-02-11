@@ -1,5 +1,5 @@
  import React from "react";
- import { IState as IProps } from '../App'
+ import { IState as IProps } from './Interfaces'
 
  
 

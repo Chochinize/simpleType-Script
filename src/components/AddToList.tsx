@@ -1,12 +1,15 @@
 import React, { useState } from "react";
-import { IState as Props } from '../App'
+import { IState as Props, IData as Data } from './Interfaces'
 
 interface IProps {
     people: Props['people']
     setPeople: React.Dispatch<React.SetStateAction<Props['people']>>
+    data: Data['data']
 }
 
-const AddToList:React.FC<IProps>=  ({people,setPeople})=>{
+
+const AddToList:React.FC<IProps>=  ({people,setPeople,data})=>{
+    
     const [input,setInput] = useState({
         name:'',
         age:'',
@@ -19,6 +22,7 @@ const AddToList:React.FC<IProps>=  ({people,setPeople})=>{
     ...input,[e.target.name]:e.target.value
 })
 }
+console.log(data[0].iD)
     const handleClick = ():void=>{
         if(
             !input.name ||
